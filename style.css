@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-size: 1.5rem;
+  --form-lement-border-color: rgba(172, 172, 172, .5);
+  --form-element-border: 1px solid var(--form-lement-border-color);
+  --font-color: rgb(0 0 0 / .8);
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond;
+}
+
+.content {
+  padding: 3rem 5rem;
+  border-radius: 1rem;
+  box-shadow: .3rem .3rem 1rem rgba(155, 155, 155, 0.5), -.1rem -.1rem 1rem rgba(155, 155, 155, 0.5);
+  border: var(--form-element-border);
+  background-color: white;
+  font-size: var(--font-size);
+  color: var(--font-color);
+}
+
+.form {
+  display: flex;
+  gap: 2px;
+  font-size: inherit;
+}
+
+.form__days-field {
+  min-width: 15rem;
+  font-size: var(--font-size);
+  padding-left: .8rem;
+  padding-right: .8rem;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  border: var(--form-element-border);
+  transition: border 300ms;
+  color: inherit;
+}
+
+.form__days-field:active,
+.form__days-field:focus,
+.form__days-field:hover {
+  border-color: grey;
+  outline: none;
+}
+
+.form__button-start {
+  padding: .5rem 2rem;
+  background-color: blanchedalmond;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  border: 1px solid rgba(172, 172, 172, .5);
+  font-size: inherit;
+  cursor: pointer;
+  transition: border, background-color, 200ms;
+  color: inherit;
+}
+
+.form__button-start:hover {
+  border-color: grey;
+}
+
+.form__button-start:active {
+  border-color: grey;
+  opacity: .5;
+}
+
+.results__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.results__list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.results__list-item span {
+  color: darkgreen;
+}
+
+.results__list-item:not(:first-of-type) {
+  margin-top: 1rem;
+}

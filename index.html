@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Work Cycle</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="page">
+  <div class="content">
+    <form class="form" action="blank">
+      <input class="form__days-field" type="number" name="days" id="days" max="365" min="1" value="150">
+      <button class="form__button-start" type="button">Старт</button>
+    </form>
+    <div class="results">
+      <ul class="results__list">
+        <li class="results__list-item">
+          Выполнено проектов:
+          <span id="projects-count"></span>
+        </li>
+        <li class="results__list-item">
+          Принято программистов:
+          <span id="employed-devs-count"></span>
+        </li>
+        <li class="results__list-item">
+          Уволенно программистов:
+          <span id="fired-devs-count"></span>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</body>
+
+</html>
