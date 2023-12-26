@@ -1,5 +1,5 @@
-import { Department } from "./Department";
-import { Developer } from "../Developer";
+import { Department } from "./Department.js";
+import { Developer } from "../Developer.js";
 
 export class Web extends Department {
   addDeveloper() {

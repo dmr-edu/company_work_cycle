@@ -1,5 +1,5 @@
-import { Developer } from "../Developer";
-import { Department } from "./Department";
+import { Developer } from "../Developer.js";
+import { Department } from "./Department.js";
 
 export class Mobile extends Department {
   getName() {
