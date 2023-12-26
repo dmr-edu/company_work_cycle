@@ -1,5 +1,5 @@
-import Project from './Project';
-import Boss from './Boss';
+import { Project } from './Project.js';
+import { Boss } from './Boss.js';
 
 export class Company {
   constructor(manager) {
